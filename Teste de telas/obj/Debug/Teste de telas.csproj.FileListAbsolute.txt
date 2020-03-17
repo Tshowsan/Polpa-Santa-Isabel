@@ -1,0 +1,10 @@
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\bin\Debug\Teste de telas.exe.config
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\bin\Debug\Teste de telas.exe
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\bin\Debug\Teste de telas.pdb
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\obj\Debug\Teste de telas.csprojAssemblyReference.cache
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\obj\Debug\Teste_de_telas.Form1.resources
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\obj\Debug\Teste_de_telas.Properties.Resources.resources
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\obj\Debug\Teste de telas.csproj.GenerateResource.cache
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\obj\Debug\Teste de telas.exe
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\obj\Debug\Teste de telas.pdb
+C:\Users\Accel\source\repos\Teste de telas\Teste de telas\obj\Debug\Teste_de_telas.Menu.resources

@@ -1,0 +1,16 @@
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.csprojAssemblyReference.cache
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.gui.Clientes.resources
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.gui.Funcionarios.resources
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.Home.resources
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.gui.Usuarios.resources
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.Properties.Resources.resources
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.csproj.GenerateResource.cache
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\bin\Debug\SantaIsabel.exe.config
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\bin\Debug\SantaIsabel.exe
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\bin\Debug\SantaIsabel.pdb
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\bin\Debug\SantaIsabel.DAL.dll
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\bin\Debug\SantaIsabel.DAL.pdb
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\bin\Debug\SantaIsabel.DAL.dll.config
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.csproj.CopyComplete
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.exe
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel\obj\Debug\SantaIsabel.pdb

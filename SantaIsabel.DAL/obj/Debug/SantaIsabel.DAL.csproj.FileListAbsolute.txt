@@ -1,0 +1,6 @@
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel.DAL\bin\Debug\SantaIsabel.DAL.dll.config
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel.DAL\bin\Debug\SantaIsabel.DAL.dll
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel.DAL\bin\Debug\SantaIsabel.DAL.pdb
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel.DAL\obj\Debug\SantaIsabel.DAL.csprojAssemblyReference.cache
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel.DAL\obj\Debug\SantaIsabel.DAL.dll
+C:\Users\robso\Videos\Polpa-Santa-Isabel\SantaIsabel.DAL\obj\Debug\SantaIsabel.DAL.pdb

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="santaIsabel" Class="ConexaoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=santaIsabel;Integrated Security=True" SettingsObjectName="SantaIsabel.DAL.Properties.Settings" SettingsPropertyName="santaIsabelConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cliente" Member="Clientes">
+    <Type Name="Cliente">
+      <Column Name="id_cliente" Member="codigo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome_cliente" Member="nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="telefone_cliente" Member="telefone" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Cliente_Nota" Member="Notas" ThisKey="codigo" OtherKey="id_cliente" Type="Nota" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome_usuario" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="senha" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="usuario" Member="usuario1" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="status" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="Usuario_Nota" Member="Notas" ThisKey="id_usuario" OtherKey="id_usuario" Type="Nota" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fornecedor" Member="Fornecedors">
+    <Type Name="Fornecedor">
+      <Column Name="id_fornecedor" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome_fornecedor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="telefone_fornecedor" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="email_fornecedor" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Fornecedor_Produto" Member="Produtos" ThisKey="id_fornecedor" OtherKey="id_fornecedor" Type="Produto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Nota" Member="Notas">
+    <Type Name="Nota">
+      <Column Name="id_nota" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="produtos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qtd_produtos" Type="System.Decimal" DbType="Decimal(4,0)" CanBeNull="true" />
+      <Column Name="valor_produtos" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="desconto" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="valor_total" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="data_emissao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_cliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Cliente_Nota" Member="Cliente" ThisKey="id_cliente" OtherKey="codigo" Type="Cliente" IsForeignKey="true" />
+      <Association Name="Usuario_Nota" Member="Usuario" ThisKey="id_usuario" OtherKey="id_usuario" Type="Usuario" IsForeignKey="true" />
+      <Association Name="Produto_Nota" Member="Produto" ThisKey="produtos" OtherKey="id_produto" Type="Produto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Produto" Member="Produtos">
+    <Type Name="Produto">
+      <Column Name="id_produto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_tipo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="qtd_produto" Type="System.Decimal" DbType="Decimal(4,0)" CanBeNull="true" />
+      <Column Name="valor_produto" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="id_fornecedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Produto_Nota" Member="Notas" ThisKey="id_produto" OtherKey="produtos" Type="Nota" />
+      <Association Name="Fornecedor_Produto" Member="Fornecedor" ThisKey="id_fornecedor" OtherKey="id_fornecedor" Type="Fornecedor" IsForeignKey="true" />
+      <Association Name="Tipo_Produto" Member="Tipo" ThisKey="id_tipo" OtherKey="id_tipo" Type="Tipo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipo" Member="Tipos">
+    <Type Name="Tipo">
+      <Column Name="id_tipo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nome_tipo" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Association Name="Tipo_Produto" Member="Produtos" ThisKey="id_tipo" OtherKey="id_tipo" Type="Produto" />
+    </Type>
+  </Table>
+</Database>
